@@ -1,7 +1,7 @@
+#!/bin/bash
 SRC_DIR=$1
 SPEC_FILE=${2:-*.spec}
 OUT_PATH=$3
-
 #change dir
 cd "$SRC_DIR" || exit
 #install
