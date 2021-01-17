@@ -7,7 +7,7 @@ pre_package_hook=$4
 cd "$SRC_DIR" || exit
 #install
 poetry config virtualenvs.create false
-poetry install --no-root
+poetry install --no-root --no-dev
 poetry show pyinstaller || poetry add pyinstaller
 $pre_package_hook
 #build
