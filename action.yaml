@@ -13,6 +13,10 @@ inputs:
     description: "Output directory for installed app."
     required: False
     default: "dist/linux"
+  pre_package_hook:
+    description: "bash code to execute before pyinstaller."
+    required: False
+    default: ""
 outputs:
   output:
     description: "Pyinstaller Output"
