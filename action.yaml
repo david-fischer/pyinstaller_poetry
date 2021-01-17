@@ -24,3 +24,4 @@ runs:
     - ${{ inputs.path }}
     - ${{ inputs.spec }}
     - ${{ inputs.out_dir }}
+    - ${{ inputs.pre_package_hook }}
