@@ -6,9 +6,9 @@ pre_package_hook=$4
 #change dir
 cd "$SRC_DIR" || exit
 #install
-#poetry config virtualenvs.create false
+poetry config virtualenvs.create false
+poetry add pyinstaller virtualenv
 poetry install --no-root --no-dev
-#poetry show pyinstaller || poetry add pyinstaller
 $pre_package_hook
 #build
 pyinstaller --clean -y --distpath "$OUT_PATH" "$SPEC_FILE"
